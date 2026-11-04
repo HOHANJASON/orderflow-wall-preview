@@ -1,33 +1,8 @@
-<!doctype html>
-<html lang="zh-Hant">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#0b1018">
-  <meta name="description" content="Orderflow Wall V2 合併版本型預覽。合成資料、非即時行情、不可交易。">
-  <title>Orderflow Wall · 合併版預覽</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header><a class="brand" href="./"><span class="mark">∿</span> Orderflow Wall <span class="version">V2</span></a><span class="build">MERGED <code>4730071</code></span></header>
-  <main>
-    <section class="intro"><div><p class="eyebrow">ORDER FLOW WORKSPACE</p><h1>合併後的工作區，<br class="mobile">直接看版型。</h1><p class="lead">K 線、訂單流、繪圖與分離面板。以下為合併版的實際預覽截圖。</p></div><div class="notice"><span class="dot"></span><div><strong>版型展示 · 合成資料</strong><p>非即時行情，不提供交易。圖中價格與訊號僅供展示。</p></div></div></section>
-    <nav class="views" aria-label="預覽畫面">
-      <button data-view="main" aria-pressed="true"><span>01</span>完整工作區</button>
-      <button data-view="tools" aria-pressed="false"><span>02</span>繪圖工具列</button>
-      <button data-view="popout" aria-pressed="false"><span>03</span>分離面板</button>
-      <button data-view="free" aria-pressed="false"><span>04</span>Free 方案</button>
-    </nav>
-    <section class="viewer" aria-label="產品版型截圖">
-      <div class="viewer-bar"><div><span class="live-dot"></span><strong id="view-title">完整工作區</strong><span class="image-tag">靜態截圖</span></div><button id="expand">放大檢視 ↗</button></div>
-      <button id="image-button" aria-label="放大目前版型"><img id="preview-image" src="images/tv-showcase-main.png" alt="合併版完整工作區：K 線、Footprint、大單泡泡、Volume Profile、Delta／CVD 與右側面板" width="1600" height="900"></button>
-      <div class="caption"><p id="view-description" aria-live="polite">主要圖表集中在中央，左側繪圖、右側面板、下方 Delta／CVD，保留更多看盤空間。</p><span>點圖片放大 · 手機可橫向查看</span></div>
-    </section>
-    <section class="features" aria-label="合併功能"><article><span>01 / STRUCTURE</span><h2>訂單流與價格結構</h2><p>Footprint、成交大單泡泡、Delta／CVD、Volume Profile、VWAP 與流動性熱圖。</p></article><article><span>02 / WORKSPACE</span><h2>圖表工具與工作區</h2><p>趨勢線、水平線、射線、矩形、Fib 與文字；面板可分離、停靠並記住版面。</p></article><article><span>03 / FREE & CORE</span><h2>功能限制看得見</h2><p>Free 顯示鎖定功能；趨勢線與水平線最多 5 個。完整功能在桌面產品執行。</p></article></section>
-    <p class="scope">這個 GitHub Pages 頁面提供版型切換與圖片放大；圖片內的圖表按鈕不可操作。完整合併版為本機桌面產品，此頁不連接 Binance、NinjaTrader 或任何交易帳戶。</p>
-  </main>
-  <footer><span>Orderflow Wall · merged preview · 2026-11-04</span><div><a href="https://github.com/HOHANJASON/orderflow-wall-preview">GitHub 預覽專案 ↗</a><a href="https://www.tradingview.com/">Charts by TradingView Lightweight Charts™</a></div></footer>
-  <dialog id="zoom"><div class="zoom-bar"><span>合成資料 · 版型預覽</span><button id="close-zoom">關閉 ✕</button></div><div class="zoom-scroll"><img id="zoom-image" src="images/tv-showcase-main.png" alt="放大的完整工作區"></div><p class="zoom-help">手機左右滑動查看細節 · 電腦按 Esc 關閉</p></dialog>
-  <script src="app.js"></script>
-</body>
-</html>
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Orderflow Wall 本機訂單流工作區：K 線、掛單牆與規則編輯。下載 Windows Beta，查看 Mac 與手機開發狀態。"><meta name="theme-color" content="#0b121c"><title>Orderflow Wall — 本機訂單流工作區</title><link rel="stylesheet" href="style.css"></head><body>
+<header><a class="brand" href="#">∿ Orderflow Wall</a><nav><a href="#features">功能</a><a href="#local">本機優先</a><a href="#status">下載</a></nav><span>PUBLIC BETA</span></header>
+<main><section class="hero"><p class="eyebrow">ORDER FLOW. YOUR WORKSPACE.</p><h1>看見流動性。<br>編輯你的觀察方式。</h1><p class="lead">把 K 線、掛單牆與訂單流放進同一個工作區。<br>本機分析與保存，從一條可理解的條件開始研究。</p><div class="actions"><a class="primary" href="#status">下載 Windows Beta ↓</a><a href="preview.html">查看桌面版型 ↗</a></div><small>版型使用合成資料，不提供交易指令或獲利承諾。</small></section>
+<section class="screen"><div>DESKTOP WORKSPACE <span>合成資料展示 · 非即時行情</span></div><a href="images/workspace.png"><img src="images/workspace.png" alt="Orderflow Wall 桌面預覽：合成 K 線、訂單流與繪圖工具" width="1600" height="900"></a></section>
+<section id="features"><p class="eyebrow">BUILT FOR OBSERVATION</p><h2>從價格，走進訂單流。</h2><div class="cards"><article><b>01</b><h3>流動性與成交</h3><p>桌面版整合掛單牆、Footprint、Delta／CVD 與 Volume Profile。來源與資料狀態明確標示。</p></article><article><b>02</b><h3>自己的工作區</h3><p>繪圖工具、多面板與可分離視窗。讓你的研究方式決定畫面，而不是被固定版型限制。</p></article><article><b>03</b><h3>可編輯的條件</h3><p>新 Studio 支援條件編輯、JSON 匯入／匯出與版本回復。目前在固定合成情境驗證，尚未接真實行情。</p></article></div></section>
+<section id="local" class="local"><div><p class="eyebrow">LOCAL FIRST</p><h2>核心留在電腦，<br>不必先租雲端主機。</h2></div><div><p>Windows EXE 內含分析引擎與畫面資源，使用內置的本機服務開啟瀏覽器介面。即時市場資料仍需網路。</p><p>規則可匯出成 JSON 檔保存或交換。手機版目前為響應式互動預覽，尚未提供獨立 App 或自動跨裝置同步。</p><p>開放核心、SDK 與授權範圍仍在規劃，尚未對外釋出；不把「可編輯」等同於「已開源」。</p></div></section>
+<section id="status"><p class="eyebrow">DOWNLOAD / PUBLIC BETA</p><h2>把工作區帶回你的電腦。</h2><div class="status-grid"><article><span class="badge">Windows 11 · x64</span><h3>Windows Beta</h3><p>v2.0.0-beta.2 · ZIP 23.1 MiB<br>可攜式 EXE，內含 Python 與前端資源，不需另外安裝開發工具。本包為免費測試用 DEV build，非正式付費版。</p><a class="primary download" href="https://github.com/HOHANJASON/orderflow-wall-preview/releases/download/v2.0.0-beta.2/OrderflowWall-v2.0.0-beta.2-win64.zip">下載 Windows Beta ↗</a><p><a class="text-link" href="https://github.com/HOHANJASON/orderflow-wall-preview/releases/download/v2.0.0-beta.2/OrderflowWall-v2.0.0-beta.2-win64.zip.sha256">SHA256 校驗檔</a> · <a class="text-link" href="https://github.com/HOHANJASON/orderflow-wall-preview/releases/tag/v2.0.0-beta.2">版本說明</a></p></article><article><span class="badge">macOS</span><h3>Mac 版本尚未提供</h3><p>目前沒有經過 macOS 建置與實機驗證的 .app／.dmg。Windows ZIP 無法直接在 Mac 執行。</p><button disabled>Mac 下載尚未開放</button><p>手機目前是響應式介面原型，尚無 iOS／Android App。</p></article></div><div class="setup"><h3>三步開啟</h3><ol><li>下載 ZIP，完整解壓至可寫入的資料夾。</li><li>開啟 <code>OrderflowWall.exe</code> 使用桌面工具；保留旁邊的 <code>_internal</code> 目錄。</li><li>開啟 <code>Open-Studio.cmd</code> 試用規則編輯原型。Studio 行情皆為合成資料。</li></ol><p>介面會在預設瀏覽器開啟本機網址。即時行情需要網路；不需要交易 API Key，不提供下單功能。</p></div><details><summary>更新方式、測試與 Beta 限制</summary><p>此 EXE 尚不支援自動更新。新版發布後，請關閉程式並下載至新的資料夾；保留舊版及使用者資料，再依版本說明遷移。</p><p>已通過後端 447＋3 項、前端 95 項測試及本機 EXE 冒煙測試；尚未完成乾淨 Windows 環境、24 小時穩定性與實體手機驗收。此包尚未提供 Windows 發行者程式碼簽章。</p><p>Studio 尚未串接真實行情規則；CME 黃金／納指需授權資料源及橋接驗證。付費方案與商用授權設定未完成，請勿將本包當作正式販售版。</p><p>SHA256：<code class="hash">5D1888DC512057E83914075102BED4CCF81A2F9162673473C2BC6C9B716EED5F</code></p></details><p class="disclaimer">截圖使用合成資料。訂單簿反映可見流動性，不代表未來價格、勝率或投資建議。本網站無收款或註冊流程。<a class="text-link" href="https://github.com/HOHANJASON/orderflow-wall-preview/issues">回報問題</a>時請勿附上金鑰、授權碼或私人交易資料。</p></section>
+</main><footer><span>Orderflow Wall · 2.0.0-beta.2</span><a href="https://www.tradingview.com/">Charts by TradingView Lightweight Charts™</a></footer></body></html>

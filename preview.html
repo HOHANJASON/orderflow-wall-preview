@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b1018">
+  <meta name="description" content="Orderflow Wall V2 合併版本型預覽。合成資料、非即時行情、不可交易。">
+  <title>Orderflow Wall · 合併版預覽</title>
+  <link rel="stylesheet" href="preview.css">
+</head>
+<body>
+  <header><a class="brand" href="./"><span class="mark">∿</span> Orderflow Wall <span class="version">V2</span></a><span class="build">MERGED <code>4730071</code></span></header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">ORDER FLOW WORKSPACE</p><h1>合併後的工作區，<br class="mobile">直接看版型。</h1><p class="lead">K 線、訂單流、繪圖與分離面板。以下為合併版的實際預覽截圖。</p></div><div class="notice"><span class="dot"></span><div><strong>版型展示 · 合成資料</strong><p>非即時行情，不提供交易。圖中價格與訊號僅供展示。</p></div></div></section>
+    <nav class="views" aria-label="預覽畫面">
+      <button data-view="main" aria-pressed="true"><span>01</span>完整工作區</button>
+      <button data-view="tools" aria-pressed="false"><span>02</span>繪圖工具列</button>
+      <button data-view="popout" aria-pressed="false"><span>03</span>分離面板</button>
+      <button data-view="free" aria-pressed="false"><span>04</span>Free 方案</button>
+    </nav>
+    <section class="viewer" aria-label="產品版型截圖">
+      <div class="viewer-bar"><div><span class="live-dot"></span><strong id="view-title">完整工作區</strong><span class="image-tag">靜態截圖</span></div><button id="expand">放大檢視 ↗</button></div>
+      <button id="image-button" aria-label="放大目前版型"><img id="preview-image" src="images/tv-showcase-main.png" alt="合併版完整工作區：K 線、Footprint、大單泡泡、Volume Profile、Delta／CVD 與右側面板" width="1600" height="900"></button>
+      <div class="caption"><p id="view-description" aria-live="polite">主要圖表集中在中央，左側繪圖、右側面板、下方 Delta／CVD，保留更多看盤空間。</p><span>點圖片放大 · 手機可橫向查看</span></div>
+    </section>
+    <section class="features" aria-label="合併功能"><article><span>01 / STRUCTURE</span><h2>訂單流與價格結構</h2><p>Footprint、成交大單泡泡、Delta／CVD、Volume Profile、VWAP 與流動性熱圖。</p></article><article><span>02 / WORKSPACE</span><h2>圖表工具與工作區</h2><p>趨勢線、水平線、射線、矩形、Fib 與文字；面板可分離、停靠並記住版面。</p></article><article><span>03 / FREE & CORE</span><h2>功能限制看得見</h2><p>Free 顯示鎖定功能；趨勢線與水平線最多 5 個。完整功能在桌面產品執行。</p></article></section>
+    <p class="scope">這個 GitHub Pages 頁面提供版型切換與圖片放大；圖片內的圖表按鈕不可操作。完整合併版為本機桌面產品，此頁不連接 Binance、NinjaTrader 或任何交易帳戶。</p>
+  </main>
+  <footer><span>Orderflow Wall · merged preview · 2026-11-04</span><div><a href="https://github.com/HOHANJASON/orderflow-wall-preview">GitHub 預覽專案 ↗</a><a href="https://www.tradingview.com/">Charts by TradingView Lightweight Charts™</a></div></footer>
+  <dialog id="zoom"><div class="zoom-bar"><span>合成資料 · 版型預覽</span><button id="close-zoom">關閉 ✕</button></div><div class="zoom-scroll"><img id="zoom-image" src="images/tv-showcase-main.png" alt="放大的完整工作區"></div><p class="zoom-help">手機左右滑動查看細節 · 電腦按 Esc 關閉</p></dialog>
+  <script src="app.js"></script>
+</body>
+</html>
+

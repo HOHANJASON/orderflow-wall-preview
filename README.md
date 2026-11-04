@@ -1,11 +1,9 @@
-# Orderflow Wall — merged layout preview
+# Orderflow Wall introduction and Beta downloads
 
-Preview: https://hohanjason.github.io/orderflow-wall-preview/
+Public GitHub Pages website. Windows testing package is distributed through GitHub Releases. Product source code is not included in this repository.
 
-Traditional Chinese static gallery of the merged desktop UI. Source baseline: local product master `4730071` (2026-11-04). Screenshots are included in that merge, last updated in `63278a6`.
+- index.html: product introduction, download, installation steps and Beta limitations.
+- preview.html: original four-layout synthetic-data gallery.
+- RELEASE-NOTES.md: testing build notes.
 
-All screenshots use synthetic preview data, not live prices. This page offers image switching and enlargement, not an interactive trading terminal. No backend, account connection, order execution, credentials, licensing code, databases or runtime logs are published here.
-
-Views: main workspace, expanded drawing toolbar, detached panel, and Free-tier feature locks. Mobile browsers can open the gallery and enlarge/scroll images. To run the complete merged version, use the local desktop product; Python services cannot run on GitHub Pages.
-
-Chart attribution: [TradingView Lightweight Charts™](https://www.tradingview.com/).
+No accounts, payments or private keys are collected. macOS and mobile installers are not available. The Windows Beta is a DEV-policy testing build, not a paid release.
